@@ -1,6 +1,7 @@
 #!/bin/bash
 
+src_dir="${HOME}/photo-filer"
 PATH="${HOME}/.local/bin:/usr/local/bin:/usr/bin"
 
-cd "${HOME}/photo-filer"
-pipenv run python photofiler.py "$@"
+export PIPENV_PIPFILE="${src_dir}/Pipfile"
+pipenv run python "${src_dir}/photofiler.py" "$@"
