@@ -1,0 +1,6 @@
+#!/bin/bash
+
+PATH="${HOME}/.local/bin:/usr/local/bin:/usr/bin"
+
+cd "${HOME}/photo-filer"
+pipenv run python photofiler.py "$@"
